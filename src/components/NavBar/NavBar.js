@@ -23,6 +23,7 @@ import {
   Bars2Icon,
 } from "@heroicons/react/24/outline";
 import { CiSearch } from "react-icons/ci";
+import { BsBrightnessHigh } from "react-icons/bs";
 
 // profile menu component
 const profileMenuItems = [
@@ -114,7 +115,17 @@ function NavList() {
       <div className="w-72">
         <Input label="Searching for ..." icon={<CiSearch size={20} />} />
       </div>
-      <Switch defaultChecked />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <span className="mx-2">Light</span>
+        <Switch defaultChecked />
+        <BsBrightnessHigh className="mx-2" />
+      </div>
     </ul>
   );
 }
