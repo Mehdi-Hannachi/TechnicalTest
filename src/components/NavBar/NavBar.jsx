@@ -22,7 +22,7 @@ import {
   PowerIcon,
   Bars2Icon,
 } from "@heroicons/react/24/outline";
-import { TbReportSearch } from "react-icons/tb";
+import { CiSearch } from "react-icons/ci";
 
 // profile menu component
 const profileMenuItems = [
@@ -112,7 +112,7 @@ function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
       <div className="w-72">
-        <Input label="Input With Icon" icon={<TbReportSearch />} />
+        <Input label="Searching for ..." icon={<CiSearch size={20} />} />
       </div>
       <Switch defaultChecked />
     </ul>
@@ -131,7 +131,13 @@ export default function ComplexNavbar() {
   }, []);
 
   return (
-    <Navbar className="max-w-screen-3xl p-2">
+    <Navbar
+      className="max-w-screen-3xl p-2"
+      style={{
+        backgroundColor: "#F1EBE2",
+        border: "0px",
+      }}
+    >
       <div className="relative mx-auto flex items-center text-blue-gray-900">
         <button className="middle none center mr-4 rounded-lg bg-pr-color py-2 px-4 font-sans text-xs font-bold text-white">
           Ask Winx

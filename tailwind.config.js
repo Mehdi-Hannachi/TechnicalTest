@@ -11,6 +11,7 @@ module.exports = withMT({
     extend: {
       colors: {
         "pr-color": "#E28D5A",
+        "bg-clr": "#F1EBE2",
         "light-white": "rgba(255,255,255,0.17)",
       },
     },

@@ -53,7 +53,7 @@ const SideBar = () => {
   return (
     <div
       className={` ${
-        open ? "w-72" : "w-20 "
+        open ? "w-44" : "w-20 "
       }   h-screen overflow-y-auto overflow-x-visible	overflow-x-clip	 no-scrollbar p-5  pt-8 relative duration-300`}
       style={{
         backgroundColor: "#2F4858",
